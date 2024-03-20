@@ -1,13 +1,16 @@
+from typing import Optional
+
 from fastapi_users import schemas
+from pydantic import Field
 
 
 class UserRead(schemas.BaseUser[int]):
-    pass
+    nickname: str
 
 
 class UserCreate(schemas.BaseUserCreate):
-    pass
+    nickname: str = Field(min_length=1, max_length=50)
 
 
 class UserUpdate(schemas.BaseUserUpdate):
-    pass
+    nickname: Optional[str] = Field(min_length=1, max_length=50)
