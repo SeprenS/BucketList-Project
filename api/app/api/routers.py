@@ -1,7 +1,6 @@
 from fastapi import APIRouter
 
-from app.api.endpoints import user_router
-from app.api.endpoints import health_check_router
+from app.api.endpoints import health_check_router, user_router
 
 main_router = APIRouter()
 
