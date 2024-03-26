@@ -1,8 +1,11 @@
-from sqlalchemy import Column, ForeignKey, Integer
+from sqlalchemy import Column, ForeignKey, Integer, Table
 
 from app.core.db import Base
 
-
-class GoalTag(Base):
-    goal_id = Column(Integer, ForeignKey("goal.id"))
-    tag_id = Column(Integer, ForeignKey("tag.id"))
+GoalTag = Table(
+    'goaltag',
+    Base.metadata,
+    Column('id', Integer, primary_key=True),
+    Column('goal_id', Integer, ForeignKey('goal.id')),
+    Column('tag_id', Integer, ForeignKey('tag.id')),
+)

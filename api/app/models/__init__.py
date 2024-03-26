@@ -1,4 +1,4 @@
-from .comment import Column  # noqa
+from .comment import Comment  # noqa
 from .favorite_goals import FavoriteGoals  # noqa
 from .goal import Goal  # noqa
 from .goal_tag import GoalTag  # noqa

@@ -12,4 +12,4 @@ class Goal(Base):
     comments = relationship("Comment", back_populates="goal")
     text = Column(Text)
     title = Column(String(200))
-    tags = relationship("Tag", secondary=GoalTag, backref="Goal")
+    tags = relationship("Tag", secondary=GoalTag, back_populates="goals_with_tag")
