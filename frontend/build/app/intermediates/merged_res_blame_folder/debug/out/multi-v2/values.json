@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/sasha/StudioProjects/ppk/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/sasha/StudioProjects/ppk/BucketList-Project/frontend/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

@@ -68,41 +68,6 @@ class SuccessReset extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
-                            Container(
-                              height: size.height / 10,
-                              width: size.width / 1.2,
-                              child: ReactiveTextField(
-                                cursorColor: Theme.of(context).primaryColor,
-                                style: theme.textTheme.bodySmall,
-                                textAlign: TextAlign.center,
-                                decoration: InputDecoration(
-                                  hintStyle: theme.textTheme.bodySmall,
-                                  hintText: 'Введите свою почту',
-                                  focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(40),
-                                    borderSide: BorderSide(
-                                        width: 4,
-                                        color: theme.primaryColor
-                                            .withOpacity(0.75)), //<-- SEE HERE
-                                  ),
-                                  disabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(40),
-                                    borderSide: BorderSide(
-                                        width: 4,
-                                        color: theme.primaryColor
-                                            .withOpacity(0.75)), //<-- SEE HERE
-                                  ),
-                                  enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(40),
-                                    borderSide: BorderSide(
-                                        width: 4,
-                                        color: theme.primaryColor
-                                            .withOpacity(0.75)), //<-- SEE HERE
-                                  ),
-                                ),
-                                formControlName: 'email',
-                              ),
-                            ),
                             Container(height: size.height / 50),
                             ReactiveFormConsumer(
                               builder: (context, form, child) {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ppk/UI/auth/sign_up.dart';
+import 'package:ppk/UI/welcome/welcome_screen.dart';
 
 class AdaptiveTextSize {
   const AdaptiveTextSize();
@@ -51,7 +52,7 @@ class MyApp extends StatelessWidget {
           ),
         )
       ),
-      home: SignUp(),
+      home: WelcomeScreen(),
     );
   }
 }
